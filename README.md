@@ -86,4 +86,4 @@ This CI/CD pipeline automates the process of **building**, **testing**, and **de
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/your-project.git
+   git clone https://github.com/ITMan-1/devops_project.git
