@@ -65,6 +65,7 @@ By default, Jenkins runs on port 8080. Open your web browser and go to:
 To unlock Jenkins, you will need the initial admin password. You can find it in the following file:
 
 *cat /var/lib/jenkins/secrets/initialAdminPassword*
+
 Copy the password and paste it into the Jenkins setup page.
 
 This completes the Jenkins installation on an EC2 instance. You can further configure Jenkins by installing the necessary plugins and setting up your desired projects.
