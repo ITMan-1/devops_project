@@ -1,5 +1,5 @@
 <div align="center">
-  **Jenkins Installation on EC2 in AWS**
+  <strong>Jenkins Installation on EC2 in AWS</strong>
 </div>
 
 ![alt text](../images/image-9.png)
