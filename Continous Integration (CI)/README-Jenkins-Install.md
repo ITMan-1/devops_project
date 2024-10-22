@@ -1,6 +1,6 @@
 **Jenkins Installation on EC2 in AWS**
 
-![alt text](image.png) ![alt text](../images/image-7.png)
+![alt text](../images/image6.png) ![alt text](../images/image-7.png)
 
 **Step 1: Connect to Your EC2 Instance**
 
