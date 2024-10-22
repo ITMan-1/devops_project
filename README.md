@@ -1,14 +1,12 @@
 # **DevOps Project - CI/CD Pipeline**
 
-![alt text](images/image.png)
-
 This project demonstrates a **Continuous Integration (CI)** and **Continuous Delivery (CD)** pipeline using **Git**, **GitHub**, **Jenkins**, **Maven**, **Ansible**, **Docker Hub**, and **Kubernetes**.
 
 ## **Overview**
 
 This CI/CD pipeline automates the process of **building**, **testing**, and **deploying** applications, enabling seamless integration and deployment across various environments. The pipeline integrates **GitHub** for version control, **Jenkins** for automating builds, **Maven** for building the code, **Ansible** for deployment, and **Kubernetes** for container orchestration.
 
-![DevOps Project Diagram](../images/image.png)
+![DevOps Project Diagram](images/image.png)
 
 ---
 
