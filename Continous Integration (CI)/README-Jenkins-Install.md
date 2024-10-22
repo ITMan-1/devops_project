@@ -2,6 +2,10 @@
   <strong>Jenkins Installation on EC2 in AWS</strong>
 </div>
 
+<div align="center">
+  <img src="../images/image-9.png" alt="Step 1 image" width="400"/>
+</div>
+
 ![alt text](../images/image-9.png)
 
 **Step 1: Connect to Your EC2 Instance**
