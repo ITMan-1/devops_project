@@ -81,9 +81,3 @@ This CI/CD pipeline automates the process of **building**, **testing**, and **de
 - **Kubernetes**: Container orchestration platform for automating the deployment, scaling, and management of containerized applications.
 
 ---
-
-## **How to Use This Project**
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/ITMan-1/devops_project.git
