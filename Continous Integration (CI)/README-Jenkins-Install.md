@@ -1,4 +1,6 @@
-**Jenkins Installation on EC2 in AWS**
+<div align="center">
+  **Jenkins Installation on EC2 in AWS**
+</div>
 
 ![alt text](../images/image-9.png)
 
