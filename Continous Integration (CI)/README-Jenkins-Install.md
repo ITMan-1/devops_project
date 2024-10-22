@@ -18,27 +18,27 @@ Download the Jenkins repository configuration file to your yum.repos.d directory
 
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
-![alt text](./images/image-1.png)
+![alt text](../images/image-1.png)
 
 Import the Jenkins repository key:
 
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
-![alt text](./images/image-2.png)
+![alt text](../images/image-2.png)
 
 **Step 4: Install Java 11**
 
 Jenkins requires Java. Install OpenJDK 11:
 
 amazon-linux-extras install java-openjdk11 -y
-![alt text](./images/image-3.png)
+![alt text](../images/image-3.png)
 
 **Step 5: Install Jenkins**
 
 Once Java is installed, you can proceed to install Jenkins:
 
 yum install jenkins -y
-![alt text](./images/image-4.png)
+![alt text](../images/image-4.png)
 
 **Step 6: Start and Enable Jenkins Service**
 
@@ -49,7 +49,7 @@ systemctl enable jenkins
 systemctl start jenkins
 systemctl status jenkins
 You should see Jenkins active and running.
-![alt text](./images/image-5.png)
+![alt text](../images/image-5.png)
 
 **Step 7: Open Jenkins in Your Browser**
 
