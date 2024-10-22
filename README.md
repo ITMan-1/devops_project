@@ -57,7 +57,7 @@ This CI/CD pipeline automates the process of **building**, **testing**, and **de
    Jenkins is configured to automatically trigger builds when there is a new commit or pull request merged into the repository.
 
 3. **Build Code**:
-   Jenkins pulls the code and uses **Maven** to compile and build the code. Once the build is successful, the generated artifacts (such as Docker images) are stored.
+   Jenkins pulls the code and uses **Maven** to compile and build the code. Once the build is successful, the generated artifacts are stored.
 
 4. **Copy Artifacts**:
    The artifacts are copied to the deployment server using **Ansible**. This process is automated to ensure fast and reliable delivery.
