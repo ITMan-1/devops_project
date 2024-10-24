@@ -32,7 +32,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to IT24</h1>
+        <h1>Welcome to IT24 Company</h1>
         <p>We are excited to announce the deployment of a new DevOps project.</p>
     </div>
 </body>
