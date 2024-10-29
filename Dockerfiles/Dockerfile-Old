@@ -1,0 +1,23 @@
+# Start from the CentOS base image
+FROM centos:latest
+
+# Update the system and install required packages
+RUN yum -y update && \
+    yum -y install wget tar java-11-openjdk
+
+# Set environment variables for JAVA_HOME
+ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk
+ENV PATH $JAVA_HOME/bin:$PATH
+
+# Download and extract Tomcat
+RUN mkdir -p /opt && \
+    wget -O /opt/apache-tomcat-9.0.96.tar.gz https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.96/bin/apache-tomcat-9.0.96.tar.gz && \
+    tar -xzf /opt/apache-tomcat-9.0.96.tar.gz -C /opt && \
+    mv /opt/apache-tomcat-9.0.96 /opt/tomcat && \
+    rm /opt/apache-tomcat-9.0.96.tar.gz
+
+# Expose Tomcat's default port 8080 to the host
+EXPOSE 8080
+
+# Start Tomcat service on container start
+ENTRYPOINT ["/opt/tomcat/bin/catalina.sh", "run"]
