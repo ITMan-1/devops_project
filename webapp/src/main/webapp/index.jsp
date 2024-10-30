@@ -17,7 +17,7 @@
             height: 100vh;
             background: url('5096160.jpg') no-repeat center center fixed;
             background-size: cover;
-            color: #333333;
+            color: #507475;
         }
 
         /* Main container styling */
