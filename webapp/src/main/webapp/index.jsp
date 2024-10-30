@@ -15,7 +15,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-image: url('5096160.jpg'); /* Ensure the path is correct */
+            background-image: url('../webapp/5096160.jpg'); /* Ensure the path is correct */
             background-size: cover;
             color: #507475;
         }
