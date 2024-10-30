@@ -9,142 +9,161 @@
         /* Body and background styling */
         body {
             font-family: Arial, sans-serif;
-            background: url("../images/it24.png") no-repeat center center fixed;
-            background-size: cover;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-color: #1a0537;
             color: #333333;
         }
 
         /* Main container styling */
         .container {
-            background-color: rgba(255, 255, 255, 0.95);
-            padding: 40px;
+            display: flex;
+            width: 800px;
+            height: 400px;
+            background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            width: 350px;
+            overflow: hidden;
         }
 
-        /* Header styling */
-        h1 {
-            color: #4c5df2;
-            font-size: 28px;
-            margin-bottom: 20px;
+        /* Left side (form) styling */
+        .left-section {
+            background-color: #f7f7f7;
+            padding: 50px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left-section h1 {
+            font-size: 24px;
             font-weight: bold;
+            color: #4c4c4c;
+            margin-bottom: 10px;
         }
 
-        /* Additional text */
-        .subtitle {
-            color: #4c4c4c;
-            font-size: 16px;
+        .left-section p {
+            font-size: 14px;
+            color: #7a7a7a;
             margin-bottom: 30px;
         }
 
-        /* Form group styling */
         .form-group {
             margin-bottom: 20px;
-            text-align: left;
+            width: 100%;
         }
 
-        /* Input fields */
-        label {
-            font-size: 14px;
-            color: #555555;
-        }
-        input[type="text"],
-        input[type="password"] {
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
             width: 100%;
-            padding: 10px;
-            margin-top: 5px;
+            padding: 12px;
             border: 1px solid #dddddd;
-            border-radius: 5px;
+            border-radius: 25px;
             font-size: 14px;
+            padding-left: 40px;
+        }
+
+        .form-group input::placeholder {
+            color: #b3b3b3;
+        }
+
+        /* Input icons */
+        .form-group .icon {
+            position: absolute;
+            margin-left: 10px;
+            margin-top: 10px;
+            color: #b3b3b3;
         }
 
         /* Login button styling */
         .btn {
-            background-color: #4c5df2;
+            background-color: #6a0dad;
             color: #ffffff;
             padding: 10px;
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
             cursor: pointer;
             width: 100%;
             font-size: 16px;
             font-weight: bold;
             margin-top: 10px;
+            transition: background-color 0.3s;
         }
         .btn:hover {
-            background-color: #3b4cb8;
+            background-color: #570b94;
         }
 
-        /* Footer and link styling */
-        .footer {
-            margin-top: 20px;
+        /* Checkbox styling */
+        .remember-me {
+            display: flex;
+            align-items: center;
             font-size: 12px;
-            color: #888888;
-        }
-        .footer a {
-            color: #4c5df2;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
+            color: #7a7a7a;
         }
 
-        /* Additional sections styling */
-        .additional-links {
-            margin-top: 15px;
+        /* Right side styling */
+        .right-section {
+            width: 50%;
+            background-color: #6a0dad;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
         }
-        .additional-links a {
-            color: #4c5df2;
+
+        .right-section h2 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .right-section p {
             font-size: 14px;
-            text-decoration: none;
-            display: block;
-            margin-top: 5px;
-        }
-        .additional-links a:hover {
-            text-decoration: underline;
+            text-align: center;
+            line-height: 1.6;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
-    <!-- Container for login box -->
+    <!-- Main container with two sections -->
     <div class="container">
-        <h1>IT24 Login</h1>
-        <p class="subtitle">Welcome back! Please sign in to access your account.</p>
         
-        <!-- Login form -->
-        <form action="loginServlet" method="POST">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit" class="btn">Login</button>
-        </form>
-        
-        <!-- Additional links below the login button -->
-        <div class="additional-links">
-            <a href="#">Forgot Password?</a>
-            <a href="#">Create an Account</a>
-            <a href="#">Help & Support</a>
+        <!-- Left section for the login form -->
+        <div class="left-section">
+            <h1>Hello!</h1>
+            <p>Sign in by your account</p>
+            <form action="loginServlet" method="POST">
+                <div class="form-group">
+                    <input type="text" id="username" name="username" placeholder="User Name" required>
+                    <span class="icon">👤</span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <span class="icon">🔒</span>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember Me</label>
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+            </form>
         </div>
         
-        <!-- Footer section -->
-        <div class="footer">
-            <p>© 2024 IT24 Company</p>
-            <a href="https://www.it24.com/privacy">Privacy Policy</a> | 
-            <a href="https://www.it24.com/terms">Terms of Service</a>
+        <!-- Right section for welcome message -->
+        <div class="right-section">
+            <h2>Welcome Back!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Tenetur architecto labore recusandae dolor.</p>
         </div>
+
     </div>
 </body>
 </html>
