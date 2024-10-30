@@ -163,7 +163,7 @@
         
         <!-- Right section for welcome message -->
         <div class="right-section">
-            <h2>Welcome Back To IT24 Portal!</h2>
+            <h2>Welcome Back!</h2>
         </div>
 
     </div>
