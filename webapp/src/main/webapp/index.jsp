@@ -15,7 +15,8 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #1a0537;
+            background: url('5096160.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: #333333;
         }
 
@@ -24,7 +25,7 @@
             display: flex;
             width: 800px;
             height: 400px;
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             overflow: hidden;
@@ -57,6 +58,7 @@
         .form-group {
             margin-bottom: 20px;
             width: 100%;
+            position: relative;
         }
 
         .form-group input[type="text"],
@@ -76,8 +78,9 @@
         /* Input icons */
         .form-group .icon {
             position: absolute;
-            margin-left: 10px;
-            margin-top: 10px;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
             color: #b3b3b3;
         }
 
