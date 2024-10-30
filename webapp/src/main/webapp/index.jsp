@@ -15,7 +15,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: url('5096160.jpg') no-repeat center center fixed;
+            background-image: url('5096160.jpg'); /* Ensure the path is correct */
             background-size: cover;
             color: #507475;
         }
@@ -163,8 +163,7 @@
         
         <!-- Right section for welcome message -->
         <div class="right-section">
-            <h2>Welcome Back!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Tenetur architecto labore recusandae dolor.</p>
+            <h2>Welcome Back To IT24 Portal</h2>
         </div>
 
     </div>
